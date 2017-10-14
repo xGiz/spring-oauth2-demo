@@ -1,0 +1,18 @@
+server:
+  port: 20322
+
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: damon
+      accessTokenUri: http://localhost:20320/oauth/token
+      scope: test
+      userAuthorizationUri: http://localhost:20320/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:20320/me
+
+logging:
+  level:
+    org.springframework.security: debug
+    com.demo.authentication: debug

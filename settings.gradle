@@ -1,0 +1,4 @@
+rootProject.name = 'authentication'
+include 'authentication-server'
+include 'authentication-client'
+

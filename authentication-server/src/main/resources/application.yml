@@ -1,0 +1,30 @@
+server:
+  port: 20320
+
+security:
+  oauth2:
+    client:
+      client-id: client
+      client-secret: damon
+      scope: test
+      grant-type: refresh_token
+  user:
+    name: user
+    password: admin
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/outh?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+logging:
+  level:
+    org.springframework.security: debug
+    com.demo.authentication: debug

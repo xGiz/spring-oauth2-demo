@@ -1,0 +1,10 @@
+group 'com.demo.authentication'
+version '1.0-SNAPSHOT'
+
+subprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+}
